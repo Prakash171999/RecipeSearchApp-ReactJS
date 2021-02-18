@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Helpers from "./Helpers";
 
-function App() {
+const api = {
+  key: Helpers.APP_KEY,
+  id: Helpers.APP_ID,
+  base: Helpers.BASE_URL,
+};
+
+const url = `${api.base}search?q={query}&app_id=${api.id}&app_key=${api.key}`;
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <h1>Food Searching App</h1>
     </div>
   );
-}
+};
 
 export default App;
