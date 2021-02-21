@@ -3,9 +3,8 @@ import "../App.css";
 import { useHistory } from "react-router-dom";
 
 const Home = () => {
-
-      const SearchRecipe = useHistory();
-      const handleStartSearch = () => SearchRecipe.push('/search');
+  const SearchRecipe = useHistory();
+  const handleStartSearch = () => SearchRecipe.push("/search");
 
   return (
     <>
@@ -21,9 +20,11 @@ const Home = () => {
             maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore
             latine molestiae, ad mutat oblique delicatissimi pro.
           </p>
-          <button id="myBtn" onClick={handleStartSearch}>
-            Start Search
-          </button>
+          <div className="start-btn">
+            <button id="myBtn" onClick={handleStartSearch}>
+              Start Search
+            </button>
+          </div>
         </div>
       </div>
     </>

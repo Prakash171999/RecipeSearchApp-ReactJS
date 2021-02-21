@@ -52,35 +52,42 @@ body {
 }
 
 .content {
-  position: fixed;
+  position:fixed;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
   width: 100%;
-  padding: 20px;
   height: 100vh;
 }
 
 .home-content{
-  /* background-color: #f56a65; */
   max-width: 100vh;
-  position: absolute;
-  bottom: 5rem;
-  left: 3rem;
+  height: auto;
+  position: relative;
+  bottom: 0;
+  margin: 0 auto;
+  top: 35rem;
 }
 
 .home-content h1{
   color: rgb(255, 255, 255);
-  /* font-size: 35px; */
   display: flex;
-  justify-content: left;
+  justify-content: center;
   text-transform: uppercase;
 }
 
 .home-content p{
   color: rgba(247, 247, 247, 0.939);
-  font-size: 15px;
-  line-height: 20px;
+  font-size: 18px;
+  line-height: 25px;
+  text-align: center;
+}
+
+.start-btn{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
 }
 
 #myBtn {
@@ -100,7 +107,7 @@ body {
 }
 
 .jumbotron {
-  padding: 30px; /* fills out the jumbotron */
+  padding: 30px;
   background-color: #ffffff;
 }
 
@@ -110,7 +117,7 @@ body {
 }
 
 .jumbotron h1 {
-  text-align: center; /* centers the heading */
+  text-align: center;
   color: #f56a65;
   font-family: "Raleway", Helvetica, Arial, sans-serif;
   font-weight: 600;
