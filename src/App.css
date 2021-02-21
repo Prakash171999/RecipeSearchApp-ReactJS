@@ -38,10 +38,65 @@ h1 {
 
 body {
   margin: 0 auto;
-  /* background-color: #eee; */
-  /* background-color: #ffffff; */
   width: 100vw;
-  /* height: 100vh; */
+}
+
+#myVideo {
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.content {
+  position: fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+  height: 100vh;
+}
+
+.home-content{
+  /* background-color: #f56a65; */
+  max-width: 100vh;
+  position: absolute;
+  bottom: 5rem;
+  left: 3rem;
+}
+
+.home-content h1{
+  color: rgb(255, 255, 255);
+  /* font-size: 35px; */
+  display: flex;
+  justify-content: left;
+  text-transform: uppercase;
+}
+
+.home-content p{
+  color: rgba(247, 247, 247, 0.939);
+  font-size: 15px;
+  line-height: 20px;
+}
+
+#myBtn {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: rgb(182, 13, 13);
+  color: rgba(255, 255, 255, 0.891);
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+#myBtn:hover {
+  background: #ddd;
+  color: black;
 }
 
 .jumbotron {
